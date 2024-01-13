@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thanh Linh">
+    <title>WoodMart</title>
+    <!-- ===== Style Css ===== -->
+    <link rel="stylesheet" type="text/css" href="./public/css/cate_check.css">
+    <!-- ===== Font Awesome ===-->
+    <link rel="stylesheet" href="./public/css/fonts/fontawesome/css/all.min.css">
+    <!--Icon Font-->
+    <link rel="stylesheet" href="./public/css/fonts/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        a{
+            text-decoration: none;
+            color: #242424;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Start Page Loader ===== -->
+    <!-- <div id="onTop"></div>
+    <div class="loader dflex">
+        <img src="./public/images/logo/wood-logo-dark.svg" alt="">
+        <div class="dflex"><span></span><span></span><span></span></div>
+    </div> -->
+    <!-- ===== End Page Loader ===== -->
+
+    <!-- Start up Header -->
+    <div class="header">
+        <div class="top_bar1">
+            <div class="row mx-auto" style="width: 90% !important;">
+                <div class="wood1 col-md-6 d-none d-md-flex">
+                    <select class="iTem language">
+                        <option value="sl" class="sl">ENGLISH</option>
+                        <option value="sl">Deutsch</option>
+                        <option value="sl">French</option>
+                        <option value="sl">Requires WPML plugin</option>
+                    </select>
+                    <select class="iTem country" style="width: 20%;">
+                        <option value="" disabled selected>COUNTRY</option>
+                        <option value="item">United States(USD)</option>
+                        <option value="item">Deutschland(EUR)</option>
+                        <option value="item">Japan(JPY)</option>
+                    </select>
+                    <div class="item free" style="width: 60%;">FREE SHIPPING FOR ALL ORDERS OF <span>$</span>150</div>
+                </div>
+                <div class="empty col-md-1 d-none d-md-flex"></div>
+                <div class="wood2 col-md-5 row align-items-center d-md-flex">
+                    <div class="item social col-md-4 d-md-flex align-items-center">
+                        <i class="fa-brands fa-facebook-f icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-twitter icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-instagram icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-youtube icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-pinterest icon" style="font-size: 18px;"></i>
+                    </div>
+                    <div class="item newsletter col-md-2 d-none d-md-flex">
+                        <i class="fa-regular fa-envelope" style="font-size: 18px;margin-top: 0;margin-right: 5px;"></i>
+                        <span>NEWSLETTER</span>
+                    </div>
+                    <div class="item contact_us col-md-1 d-none d-md-flex" style="width: 20%;">CONTACT US</div>
+                    <div class="item faqs col-md-1 d-none d-none d-md-flex" style="width: 10%;">FAQS</div>
+                </div>
+            </div>
+        </div>
+        <div class="top_bar2">
+            <div class="top_bar2_container">
+                <div class="topbar2 row mx-auto">
+                    <a href="./index.html" class="site-logo col-md-3 d-md-flex">
+                        <img class="logo" src="./public/images/wood-logo-dark.svg">
+                    </a>
+                    <div class="search_container col-md-6 d-md-flex d-none">
+                        <div class="search-bar">
+                            <input type="text" class="search-input" placeholder="Search for products">
+                            <select class="category-select">
+                                <option value="" disabled selected>Select category</option>
+                                <option value="category1">Clocks</option>
+                                <option value="category2">Lighting</option>
+                                <option value="category2">Furniture</option>
+                                <option value="category2">Accessories</option>
+                                <option value="category2">Cooking</option>
+                                <option value="category2">Toys</option>
+                                <option value="category2">Other</option>
+                            </select>
+                            <button class="search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list2 col-md-3 d-md-flex d-none">
+                        <div class="login">
+                            <a class="a_login" href="./loginpage.html">
+                                LOGIN/REGISTER
+                            </a>
+                        </div>
+                        <div class="fa-regular fa-heart" style="font-size: 18px;"></div>
+                        <div class="fa-solid fa-shuffle" style="font-size: 18px;"></div>
+                        <a href="./cart.html" class="shopping_cart">
+                            <i style="margin-right: 5px;" class="fa-solid fa-cart-shopping"></i>
+                            <div class="money">
+                                <span class="dollar">$</span>
+                                0.00
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_bar3">
+            <div class="top_bar3_container row mx-auto">
+                <div class="browser col-md-3 d-md-flex d-none">
+                    <span class="menu_open_icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <span class="menu_open_label">BROWSE CATEGORIES</span>
+                    <span class="menu_more_icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="list col-md-5 d-md-flex d-none">
+                    <div class="menu">
+                        <div class="element">HOME</div>
+                        <div class="element">SHOP</div>
+                        <div class="element">BLOG</div>
+                        <div class="element">PAGES</div>
+                        <div class="element">ELEMENTS</div>
+                        <div class="element">BUY</div>
+                    </div>
+                </div>
+                <div class="offer col-md-3 d-md-flex d-none">
+                    <div class="special_offer">SPECIAL OFFER</div>
+                    <div class="purchase_theme">PURCHASE THEME</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- ===== Start Menu Moblie ===== -->
+    <menu></menu>
+    <!-- ===== End Menu Moblie ======= -->
+
+    <!-- ===== Start Banner ===== -->
+    <div class="bannerProduct cart">
+        <ul>
+            <li class="active"> <a href="cart.html">SHOPPING CART</a></li>
+            <li><i class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="active"> <a href="checkout.html">CHECK OUT</a></li>
+            <li><i class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="active"> <a href="#">ORDER COMPLETE</a></li>
+        </ul>
+    </div>
+    <!--End Banner-->
+    
+
+    <!-- ===== Start up Checkout ===== -->
+    <div class="checkout">
+        <div class="checkout__wrap container dflex">
+            <div class="checkout__item col-lg-6 col-12">
+                <div class="checkout_register">
+                    <div class="info">
+                        <strong>Returning customer?</strong>
+                        <a href="#">Click here to login</a> 
+                    </div>
+                    <br>
+                    <div class="info">
+                        <strong>Have a coupon?</strong>
+                        <a href="#"> Click here to enter your code</a>
+                    </div>
+                    <br>
+                    <img src="./public/images/free_shipping.png" alt="" style="height: 100%; width: 100%; padding-left: 0%; padding-right: 0%;">
+                </div>
+                
+                <br>
+                <br>
+                <h3>Billing Details</h3>
+                <form action="#" class="checkout__form">
+                    <!-- Start Personal information 1 -->
+                    <div class="dflex" style="flex-wrap: wrap;">
+                        <div class="input input__firstName col-lg-6 col-12">
+                            <label for="first">First name&nbsp;<span class="required">*</span></label>
+                            <input type="text" id="first">
+                          </div>
+                        <div class="input input__lastName col-lg-6 col-12">
+                            <label for="name">Last name&nbsp;<span class="required">*</span></label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="input input__company col-12">
+                        <label for="company">Company name (optional)</label>
+                        <input type="text" id="company">
+                    </div>
+
+                    
+                    <div class="input input__country col-12">
+                        <label for="country">Country / Region&nbsp;<span class="required">*</span></label>
+                        <select id="country">
+                            <option value="select" style="color: gray;">United States (US)</option>
+                            <option value="VN">VietNam</option>
+                            <option value="UK">English</option>
+                            <option value="US">United States</option>
+                            <option value="CN">China</option>
+                            <option value="FRA">France</option>
+                            <option value="DEU">Germany</option>
+                            <option value="ITA">Italy</option>
+                            <option value="JPN">Japan</option>
+                            <option value="MEX">Mexico</option>
+                            <option value="PAK">Pakistan</option>
+                            <option value="PHL">Philippines</option>
+                            <option value="POL">Poland</option>
+                            <option value="PRT">Portugal</option>
+                            <option value="QTA">Qatar</option>
+                            <option value="ROU">Romania</option>
+                            <option value="RUS">Russia</option>
+                            <option value="ESP">Spain</option>
+                            <option value="THA">Thailand</option>
+                            <option value="SGP">Singapore</option>
+                        </select>
+                    </div>
+                    <div class="input input__street col-12">
+                        <label for="street">Street address&nbsp;<span class="required">*</span></label>
+                        <input type="text" id="street" placeholder="House number and street name">
+                        <input type="text" id="street" placeholder="Apartment, suite, unit, etc. (optional)">
+                    </div>
+                    <div class="input input__city col-12">
+                        <label for="city">Town / City&nbsp;<span class="required">*</span></label>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="input input__state col-12">
+                        <label for="state">State&nbsp;<span class="required">*</span></label>
+                        <select id="state">
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="district">District of Columbia</option>
+                            <option value="florida">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="new hampshire">New Hampshire</option>
+                            <option value="new jersey">New Jersey</option>
+                            <option value="new mexico">New Mexico</option>
+                            <option value="new york">New York</option>
+                            <option value="north carolina">North Carolina</option>
+                            <option value="north dakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhode island">Rhode Island</option>
+                            <option value="south carolina">South Carolina</option>
+                            <option value="south dakota">South Dakota</option>
+                            <option value="tennessee">Tennessee</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Washington</option>
+                            <option value="west virginia">West Virginia</option>
+                            <option value="wisconsin">Wisconsin</option>
+                            <option value="wyoming">Wyoming</option>
+                            <option value="AA">Armed Forces (AA)</option>
+                            <option value="AE">Armed Forces (AE)</option>
+                            <option value="AP">Armed Forces (AP)</option>
+                        </select>
+                    </div>
+                    <div class="input input__zip col-12">
+                        <label for="zip">ZIP Code&nbsp;<span class="required">*</span></label>
+                        <input type="text" id="zip">
+                    </div>
+                    <div class="input input__phone col-12">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone">
+                    </div>   
+                    <div class="input input__email col-12">
+                        <label for="email">Email address&nbsp;<span class="required">*</span></label>
+                        <input type="text" id="email">
+                    </div>
+                    <!-- End Personal information 1 -->  
+                    <div class="input input__checkbox col-12">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Create an account?</label>
+                    </div><br>
+                    <br>
+                    <div class="input input__checkbox col-12">
+                        <input type="checkbox" id="checkbox" checked="checked">
+                        <label for="checkbox">Ship to a different address?</label>
+                    </div><br>
+                    
+                    <!-- Start Personal information 2 -->
+                    <div class="dflex" style="flex-wrap: wrap;">
+                        <div class="input input__firstName col-lg-6 col-12">
+                            <label for="first">First name&nbsp;<span class="required">*</span></label>
+                            <input type="text" id="first">
+                        </div>
+                        <div class="input input__lastName col-lg-6 col-12">
+                            <label for="name">Last name&nbsp;<span class="required">*</span></label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="input input__company col-12">
+                        <label for="company">Company name (optional)</label>
+                        <input type="text" id="company">
+                    </div>
+                    <div class="input input__country col-12">
+                        <label for="country">Country / Region&nbsp;<span class="required">*</span></label>
+                        <select id="country">
+                            <option value="select">United States (US)</option>
+                            <option value="VN">VietNam</option>
+                            <option value="UK">English</option>
+                            <option value="US">United States</option>
+                            <option value="CN">China</option>
+                            <option value="FRA">France</option>
+                            <option value="DEU">Germany</option>
+                            <option value="ITA">Italy</option>
+                            <option value="JPN">Japan</option>
+                            <option value="MEX">Mexico</option>
+                            <option value="PAK">Pakistan</option>
+                            <option value="PHL">Philippines</option>
+                            <option value="POL">Poland</option>
+                            <option value="PRT">Portugal</option>
+                            <option value="QTA">Qatar</option>
+                            <option value="ROU">Romania</option>
+                            <option value="RUS">Russia</option>
+                            <option value="ESP">Spain</option>
+                            <option value="THA">Thailand</option>
+                            <option value="SGP">Singapore</option>
+                        </select>
+                    </div>
+                    <div class="input input__street col-12">
+                        <label for="street">Street address&nbsp;<span class="required">*</span></label>
+                        <input type="text" id="street" placeholder="House number and street name">
+                        <input type="text" id="street" placeholder="Apartment, suite, unit, etc. (optional)">
+                    </div>
+                    <div class="input input__state col-12">
+                        <label for="state">State&nbsp;<span class="required">*</span></label>
+                        <select id="state">
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                            <option value="delaware">Delaware</option>
+                            <option value="district">District of Columbia</option>
+                            <option value="florida">Florida</option>
+                            <option value="georgia">Georgia</option>
+                            <option value="hawaii">Hawaii</option>
+                            <option value="idaho">Idaho</option>
+                            <option value="illinois">Illinois</option>
+                            <option value="indiana">Indiana</option>
+                            <option value="iowa">Iowa</option>
+                            <option value="kansas">Kansas</option>
+                            <option value="kentucky">Kentucky</option>
+                            <option value="louisiana">Louisiana</option>
+                            <option value="maine">Maine</option>
+                            <option value="maryland">Maryland</option>
+                            <option value="massachusetts">Massachusetts</option>
+                            <option value="michigan">Michigan</option>
+                            <option value="minnesota">Minnesota</option>
+                            <option value="mississippi">Mississippi</option>
+                            <option value="missouri">Missouri</option>
+                            <option value="montana">Montana</option>
+                            <option value="nebraska">Nebraska</option>
+                            <option value="nevada">Nevada</option>
+                            <option value="new hampshire">New Hampshire</option>
+                            <option value="new jersey">New Jersey</option>
+                            <option value="new mexico">New Mexico</option>
+                            <option value="new york">New York</option>
+                            <option value="north carolina">North Carolina</option>
+                            <option value="north dakota">North Dakota</option>
+                            <option value="ohio">Ohio</option>
+                            <option value="oklahoma">Oklahoma</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="pennsylvania">Pennsylvania</option>
+                            <option value="rhode island">Rhode Island</option>
+                            <option value="south carolina">South Carolina</option>
+                            <option value="south dakota">South Dakota</option>
+                            <option value="tennessee">Tennessee</option>
+                            <option value="texas">Texas</option>
+                            <option value="utah">Utah</option>
+                            <option value="vermont">Vermont</option>
+                            <option value="virginia">Virginia</option>
+                            <option value="washington">Washington</option>
+                            <option value="west virginia">West Virginia</option>
+                            <option value="wisconsin">Wisconsin</option>
+                            <option value="wyoming">Wyoming</option>
+                            <option value="AA">Armed Forces (AA)</option>
+                            <option value="AE">Armed Forces (AE)</option>
+                            <option value="AP">Armed Forces (AP)</option>
+                        </select>
+                    </div>
+                    <div class="input input__city col-12">
+                        <label for="city">Town / City&nbsp;<span class="required">*</span></label>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="input input__zip col-12">
+                        <label for="zip">ZIP Code&nbsp;<span class="required">*</span></label>
+                        <input type="text" id="zip">
+                    </div>
+                    <div class="input input__message col-12">
+                        <label for="message">Order notes (optional)</label>
+                        <textarea id="message" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                    </div>
+                    <!-- End Personal information 2 -->                               
+                </form>
+            </div>
+
+            <div class="checkout__item col-lg-6 right col-12">
+                <h3>Your Order</h3>
+                <form action="#">
+                    <ul>
+                        <li class="dflex">
+                            <div class="heading">PRODUCT</div>
+                            <div class="heading">TOTAL</div>
+                        </li>
+                        <li class="dflex">
+                            <img style="height: 15%;width: 15%; margin-left: 10px;" src="./public/images/shop/product/iPhone6-Black.jpg" alt="ip6-black"/>
+                            <div class="wd-checkout-prod-title" style="display: flex;
+                            flex-wrap: wrap; margin-inline-end: 10px; margin: 0; border: 0; vertical-align: baseline; font: inherit; font-size: 100%; padding-left: 2%;">
+                                <h4 style="font-size: medium; color: #777777; font-weight: 400;font-size: 14px; font-family: Lato, Arial, Helvetica, sans-serif;">iPhone Dock - Black</h4>
+                                <div class="quantity" style="margin-top: 10px; width: 100%;max-width: 100% !important; display: flex; box-sizing: border-box; text-align: start; border-spacing: 0; border-collapse: collapse">
+                                    <input type="button" value="-" class="minus" fdprocessedid="n027x" style="height: 32px; width: 10%; padding: 0 5px; min-width: 25px; min-height: unset; border: 2px solid rgba(0, 0, 0, 0.1); background: transparent; box-shadow: none; display: inline-block; color: #777777; cursor: pointer; appearance: button; text-align: center">
+                                    <label class="screen-reader-text" for="quantity_6553648e52139"></label>
+                                    <input type="number" id="quantity_6553648e52139" class="input-text qty text" value="1" aria-label="Product quantity" min="0" max="" name="cart[6fed4dcc73d8d62224b1f88f77c48d5d][qty]" step="1" placeholder="" inputmode="numeric" autocomplete="off" fdprocessedid="515k1i" style="height: 32px; width: 16%; padding: 0 5px; max-width: 100%; min-height: unset; border: 2px solid rgba(0, 0, 0, 0.1); background: transparent; box-shadow: none; display: inline-block; color: #777777; cursor: pointer; appearance: button; text-align: center; vertical-align: middle; font-style: unset; font-family: inherit; text-shadow: none; text-transform: uppercase">
+                                    <input type="button" value="+" class="plus" fdprocessedid="dvtbnk" style="height: 32px; width: 10%; padding: 0 5px; min-width: 25px; min-height: unset; border: 2px solid rgba(0, 0, 0, 0.1); background: transparent; box-shadow: none; display: inline-block; color: #777777; cursor: pointer; appearance: button; text-align: center">
+                                </div>
+                            </div>
+                            <div class="price">$399.00</div>
+                        </li>
+                        <li class="dflex">
+                            <div class="heading">Subtotal</div>
+                            <div class="price green">$399.00</div>
+                        </li>
+                        <li class="dflex">
+                            <div class="heading">Shipping</div>
+                            <div class="checkbox">
+                                <p style="display: flex; justify-content: right;">
+                                    Flat rate:<span class="price green">$20.00</span>
+                                    <input type="radio" name="price" value="20.00" id="flat-rate" checked="checked">
+                                    <label for="flat-rate"></label>
+                                </p>                                                         
+                                <p style="display: flex; justify-content: right;">
+                                    Local pickup:<span class="price green">$25.00</span>
+                                    <input type="radio" id="local-pickup" name="shipping-option" value="25.00">
+                                    <label for="local-pickup"></label>
+                                </p>                                
+                            </div>
+                        </li>
+                        <li class="dflex">
+                            <div class="heading">Total</div>
+                            <div class="price green">$419.00</div>
+                        </li>
+                    </ul>
+                    <div class="payments">
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment1" checked="checked">
+                            <label for="payment1">Direct bank transfer</label>
+                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won't be shipped until the funds have cleared in our account.</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment2">
+                            <label for="payment2">Cheque Payment</label>
+                            <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                        </div>
+                        <br>
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment3">
+                            <label for="payment3">Cash on Delivery</label>
+                            <p>Pay with cash upon delivery.</p>
+                        </div>
+                        <br>
+                        <div class="payments__item">
+                            <input type="radio" name="payment" id="payment4">
+                            <label for="payment4">PayPal<img src="./public/images/paypal.jpg" alt="PayPal Logo"><a href="#">What is PayPal?</a></label>
+                            <p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <strong><a href="#">privacy policy</a></strong>.</p>
+                    <hr>
+                    <div class="input input__checkbox">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                           I have read and agree to the website<strong><a> terms and conditions <span class="required">*</span></a></strong></label>
+                        <button type="submit">PLACE ODER</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ===== End of Checkout ===== -->
+    
+    <!-- ===== Start Clients ======= -->
+    <div class="clients">
+        <div class="clients__wrap dflex" id="wrap">
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-witra.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-Rosenthal.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-PackIt.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/nichemodern.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-Magisso.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-Louis-Poulsen.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/klobe2r.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-Joseph-Joseph.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-hay.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-flos.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-Eva-Solo.png" alt=""></div>
+            <div class="client__item col-lg-2 col-sm-3 col-4"><img src="./public/images/brand-alessi.png" alt=""></div>
+        </div>
+    </div>
+    <!-- ====== End Clients ====== -->
+    <div class="footer">
+        <div class="footer-container-main">
+            <div class="footer-side-bar row mx-auto">
+                <div class="footer-column-1 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all">
+                        <div class="footer-menu"><b>FOOTER MENU</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">Instagram profile</a>
+                            <a class="list-items" href="#">New Collection</a>
+                            <a class="list-items" href="#">Woman Dress</a>
+                            <a class="list-items" href="#">Contact Us</a>
+                            <a class="list-items" href="#">Lastest News</a>
+                            <a class="list-items" href="#">Purchase Theme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-2 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all2">
+                        <div class="footer-menu"><b>RECENT POSTS</b></div>
+                        <div class="footer-list">
+                            <div class="room">
+                                <img class="room-pic" src="./public/images/blog-12-75x65.jpg">
+                                <div class="text-room">
+                                    <div class="text-des"><b>A companion for extra<br>sleeping</b></div>
+                                    <div class="text-cmt">
+                                        <div class="text-date">July 23,2016</div>
+                                        <div class="text-date" style="padding-left: 3px;">1 Comment</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <img class="room-pic" src="./public/images/blog-11-75x65.jpg">
+                                <div class="text-room">
+                                    <div class="text-des"><b>Outdoor seating<br>collection inspiration</b></div>
+                                    <div class="text-cmt">
+                                        <div class="text-date">July 23,2016</div>
+                                        <div class="text-date" style="padding-left: 3px;">1 Comment</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-3 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all3">
+                        <div class="footer-menu"><b>OUR STORES</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">New York</a>
+                            <a class="list-items" href="#">London SF</a>
+                            <a class="list-items" href="#">Edinburgh</a>
+                            <a class="list-items" href="#">Los Angeles</a>
+                            <a class="list-items" href="#">Chicago</a>
+                            <a class="list-items" href="#">Las Vegas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-4 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all4">
+                        <div class="footer-menu"><b>USEFUL LINKS</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">Privacy Policy</a>
+                            <a class="list-items" href="#">Returns</a>
+                            <a class="list-items" href="#">Terms&Condition</a>
+                            <a class="list-items" href="#">Contact Us</a>
+                            <a class="list-items" href="#">Lastest News</a>
+                            <a class="list-items" href="#">Our Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-md-block d-none">
+        <div class="footer-end">
+            <div class="footer_end row">
+                <div class="min-footer col-md-9 d-md-block d-none">
+                    <div class="min-footer-text"><b>WOODMART</b> © 2023 CREATED BY <b><span
+                                style="color: red;">X</span>TEMOS STUDIO</b>. PREMIUM E-COMMERCE SOLUTIONS.
+                    </div>
+                </div>
+                <div class="min-footer-logo col-md-3 d-md-block d-none">
+                    <img class="footer-end-logo" src="./public/images/payments.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====== Isotope ========== -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- ====== JavaScript ======= -->
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
