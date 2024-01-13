@@ -1,0 +1,389 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.shop_flow{
+    display: block;
+    background-image: url("../images/page-title-shop.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    align-items: center !important;
+    margin-bottom: 40px;
+}
+.flow_work{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding: 60px 0;
+}
+.flow_title{
+    color: #d8d8d8;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.flow_title_first{
+    color: #FFFFFF;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration:underline 3px #83b735;
+}
+.flow_title_first:hover{
+    color: #FFFFFF;
+}
+.flow_title:hover{
+    color:#FFFFFF;
+}
+.container{
+    width: 80% !important;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+table th{
+    width: 100%;
+    padding: 15px 10px;
+    border-bottom: 2px solid #00000013;
+    color: #242424;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins";
+    width: 100%;
+}
+td{
+    padding: 15px 12px;
+}
+.product_x{
+    width: 5%;
+    text-align: center;
+    align-items: center;
+    color:#333333;
+}
+.produc_image{
+    width: 10%;
+}
+.product_name{
+    width:30%;
+}
+.product_price{
+    width:15%;
+}
+.product_quantity{
+    width:15%;
+}
+.product_subtotal{
+    width:25%;
+    font-size: 16px;
+    font-weight: 600;
+    color:#83b735;
+    font-family: "Lato";
+}
+.link_detail{
+    color:#333333;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 590;
+    text-decoration: none;
+}
+.link_detail:hover{
+    color: #9f9f9f;
+}
+.detail_price{
+    font-family: "Lato";
+    font-size: 14px;
+    color:#777777;
+    font-weight: 400;
+}
+.math{
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    border: 0.2px solid #0000001a;
+    transition: background-color 0.3s linear;
+}
+.math:hover{
+    background-color: #83b735;
+}
+.math_1{
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    border: 0.2px solid #0000001a;
+    transition: background-color 0.3s linear;
+}
+.coupon{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+    justify-content: left;
+    align-items: end;
+    border-top: 0.5px;
+    border-top:0.5px groove #77777743;
+}
+.coupon_code{
+    color: #777777;
+    font-family: "Lato";
+    height: 40px;
+    width: 240px;
+    padding-left: 10px;
+    border: 1.5px solid #77777743;
+}
+.apply_coupon{
+    margin-left: 10px;
+    height: 40px;
+    width: 150px;
+    background-color: #83b735;
+    color:white;
+    border: none;
+    box-shadow: 1px 1px 1px #777777;
+    transition: background-color 0.2s linear;
+}
+.apply_coupon:hover{
+    background-color:#73a02e
+}
+.cart_total{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #77777758;
+    height: 100%;
+}
+.cart_total_inner{
+    padding: 25px 25px;
+}
+.cart_text{
+    padding-left: 6px;
+    color: #242424;
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.subtotal_price{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #77777758;
+    justify-content: space-between;
+    align-items: center;
+}
+.subtotal_sub{
+    font-size: 14px;
+    color:#777777;
+    font-family: "Lato";
+    font-weight: 400;
+    padding: 15px 10px;
+}
+.shipping{
+    font-weight: 600;
+    font-family: "Lato";
+    font-size: 14px;
+    color:#242424;
+    padding:15px 10px;
+}
+.ship_method{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+}
+.check{
+    border-radius: 100%;
+    margin-left: 5px;
+}
+.method{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.price_method{
+    color:#83b735;
+    font-size: 14px;
+    font-family: "Lato";
+    font-weight: 600;
+}
+.method_1{
+    color:#242424;
+    font-family: "Lato";
+    font-size: 14px;
+    padding-right: 2px;
+    font-weight: 400;
+}
+.ship_text{
+    text-align: right;
+    color:#777777;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+}
+.change_add{
+    text-align: right;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color:#83b735;
+    font-weight: 600;
+}
+.change_add:hover{
+    color:#83b735;
+}
+.total{
+    color:#242424;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+.total_all{
+    color:#83b735;
+    font-size: 22px;
+    font-family: "Lato";
+    font-weight: 600;
+}
+.last_btn{
+    background-color: #83b735;
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-shadow: 1px 1px 1px #77777758;
+    font-weight: 600;
+    font-family: "Lato";
+    color:white;
+    font-size: 13px;
+}
+.a_last_btn{
+    color:white;
+    text-decoration: none;
+}
+.a_last_btn:hover{
+    color:white;
+}
+.like{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+}
+.freq_title{
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.freq_1_item{
+    display:block;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.freq_image{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.shuffle_2{
+    display:flex;
+    padding:10px;
+    height: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: opacity 0.3s linear,
+     transform 0.2s linear,
+     box-shadow 0.2s linear;
+    background-color: white;
+}
+.shuffle{
+    display: block;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    justify-content: right;
+    background-color: white;
+    height: fit-content;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.2s linear,transform 0.2s linear;
+    border-top: 0.2px solid #d7d5d5;
+    border-bottom: 0.2px solid #d7d5d5;
+}
+.freq_1_item:hover .shuffle_2{
+    opacity: 1;
+    transform: translateX(-10%);
+    box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.3);
+}
+.freq_1_item:hover .shuffle{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.freq_im{
+    transition: transform 1s cubic-bezier(0,0,.44,1.18);
+}
+.freq_1_item:hover .freq_im{
+    transform: scale3d(1.1,1.1,1)
+}
+.freq_text{
+    display: block;
+    text-align: center;
+    z-index: 1;
+}
+.freq_name{
+    font-family: "Poppins";
+    font-size: 14px;
+    color:#333333;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.freq_category{
+    font-family: "Lato";
+    font-size: 13.3px;
+    font-weight: 400;
+    color:#a5a5a5;
+}
+.freq_pri{
+    position: relative;;
+    font-family: "Lato";
+    font-size: 14px;
+    color:#729f2e;
+    font-weight: 600;
+    transition: transform 0.2s linear;
+}
+.freq_1_item:hover .freq_pri{
+    transform: translateY(-100%);
+}
+.freq_price{
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.freq_rating{
+    unicode-bidi: bidi-override;
+    color: #ffd700;
+    font-size: 18px;
+    height: 1em;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.2s linear;
+}
+.freq_1_item:hover .freq_rating{
+    transform: translateY(-100%);
+}

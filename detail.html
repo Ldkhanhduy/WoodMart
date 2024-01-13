@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>WoodMart-Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-Ab2lwLpUqNmMqm0NMT2yn4H7dP7llD6OBwCRb9C6BJMDhsMti8DrBZQJrF/tj07Npx6RsNE0b+dQ7zLOz0Yy+g==" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="./public/css/detail.css"/>
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./public/js/main.js"/>
+    <link rel="stylesheet" href="./public/css/fonts/fontawesome/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="top_bar1">
+            <div class="row mx-auto" style="width: 90% !important;">
+                <div class="wood1 col-md-6 d-none d-md-flex">
+                    <select class="iTem language">
+                        <option value="sl" class="sl">ENGLISH</option>
+                        <option value="sl">Deutsch</option>
+                        <option value="sl">French</option>
+                        <option value="sl">Requires WPML plugin</option>
+                    </select>
+                    <select class="iTem country" style="width: 20%;">
+                        <option value="" disabled selected>COUNTRY</option>
+                        <option value="item">United States(USD)</option>
+                        <option value="item">Deutschland(EUR)</option>
+                        <option value="item">Japan(JPY)</option>
+                    </select>
+                    <div class="item free" style="width: 60%;">FREE SHIPPING FOR ALL ORDERS OF <span>$</span>150</div>
+                </div>
+                <div class="empty col-md-1 d-none d-md-flex"></div>
+                <div class="wood2 col-md-5 row align-items-center d-md-flex">
+                    <div class="item social col-md-4 d-md-flex align-items-center">
+                        <i class="fa-brands fa-facebook-f icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-twitter icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-instagram icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-youtube icon" style="font-size: 18px;"></i>
+                        <i class="fa-brands fa-pinterest icon" style="font-size: 18px;"></i>
+                    </div>
+                    <div class="item newsletter col-md-2 d-none d-md-flex">
+                        <i class="fa-regular fa-envelope" style="font-size: 18px;margin-top: 0;margin-right: 5px;"></i>
+                        <span>NEWSLETTER</span>
+                    </div>
+                    <div class="item contact_us col-md-1 d-none d-md-flex" style="width: 20%;">CONTACT US</div>
+                    <div class="item faqs col-md-1 d-none d-none d-md-flex" style="width: 10%;">FAQS</div>
+                </div>
+            </div>
+        </div>
+        <div class="top_bar2">
+            <div class="top_bar2_container">
+                <div class="topbar2 row mx-auto">
+                    <a href="./index.html" class="site-logo col-md-3 d-md-flex">
+                        <img class="logo" src="./public/images/wood-logo-dark.svg">
+                    </a>
+                    <div class="search_container col-md-6 d-md-flex d-none">
+                        <div class="search-bar">
+                            <input type="text" class="search-input" placeholder="Search for products">
+                            <select class="category-select">
+                                <option value="" disabled selected>Select category</option>
+                                <option value="category1">Clocks</option>
+                                <option value="category2">Lighting</option>
+                                <option value="category2">Furniture</option>
+                                <option value="category2">Accessories</option>
+                                <option value="category2">Cooking</option>
+                                <option value="category2">Toys</option>
+                                <option value="category2">Other</option>
+                            </select>
+                            <button class="search-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list2 col-md-3 d-md-flex d-none">
+                        <div class="login">
+                            <a class="a_login" href="./loginpage.html">
+                                LOGIN/REGISTER
+                            </a>
+                        </div>
+                        <div class="fa-regular fa-heart"></div>
+                        <div class="fa-solid fa-shuffle"></div>
+                        <a href="./cart.html" class="shopping_cart">
+                            <i style="margin-right: 5px;" class="fa-solid fa-cart-shopping"></i>
+                            <div class="money">
+                                <span class="dollar">$</span>
+                                0.00
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_bar3">
+            <div class="top_bar3_container row mx-auto">
+                <div class="browser col-md-3 d-md-flex d-none">
+                    <span class="menu_open_icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <span class="menu_open_label">BROWSE CATEGORIES</span>
+                    <span class="menu_more_icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="list col-md-5 d-md-flex d-none">
+                    <div class="menu">
+                        <div class="element">HOME</div>
+                        <div class="element">SHOP</div>
+                        <div class="element">BLOG</div>
+                        <div class="element">PAGES</div>
+                        <div class="element">ELEMENTS</div>
+                        <div class="element">BUY</div>
+                    </div>
+                </div>
+                <div class="offer col-md-3 d-md-flex d-none">
+                    <div class="special_offer">SPECIAL OFFER</div>
+                    <div class="purchase_theme">PURCHASE THEME</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper d-flex align-items-center justify-content-center">
+        <!-- start detail -->
+        <section class="detail row">
+            <div class="detail_image col-lg-6 col-12 col-md-6">
+                <div class="sub_image">
+                    <div class="sub_image_list">
+                        <img class="blur" src="./public/images/iphone1_1.jpg" alt="iphone">
+                    </div>
+                    <div class="sub_image_list">
+                        <img class="blur" src="./public/images/iphone2.jpg" alt="iphone">
+                    </div>
+                    <div class="sub_image_list">
+                        <img class="blur" src="./public/images/iphone3.jpg" alt="iphone">
+                    </div>
+                    <div class="slide">
+                        <button class="btnn">
+                            &#x2191;
+                        </button>
+                        <button class="btnn">
+                            &#x2193;
+                        </button>
+                    </div>
+                </div>
+                <div class="main_image" style="height: auto; width: 77.4%;">
+                    <div class="image">
+                        <img class="move1" src="./public/images/move-to-the-next-page-symbol.svg" alt="arow">
+                        <img class="move2" src="./public/images/previous-page.png" alt="arow">
+                        <img class="scale" src="./public/images/iphone1.jpg" alt="iphone">
+                    </div>
+                </div>
+            </div>
+            <div class="detail_product col-lg-6 col-12 col-md-6">
+                <div class="link">
+                    <div class="link_k">Home</div><div class="link_k">/</div>
+                    <div class="link_k">Shop</div><div class="link_k">/</div>
+                    <div class="link_k">Accessories</div><div class="link_k">/</div>
+                    <div class="link_k" style="font-weight: 600;color:#333333;">iPhone Dock</div>
+                </div>
+                <div class="name">
+                    <h1 class="detail_name">iPhone Dock</h1>
+                    <div class="brand">
+                        <a href="#" style="margin:10px">
+                            <img src="./public/images/brand-alessi.png" alt="alessi" width="90" height="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rating">★★★★★</div>
+                    <a href="#" class="link_k" style="text-decoration: none;padding-bottom: 7px;">(1 customer review)</a>
+                </div>
+                <p class="price">$399.00</p>
+                <div class="phara">
+                    <p>Consequat a scelerisque suspendisse vel et eget eu vitae adipiscing nibh scelerisque semper cum adipiscing facilisis adipiscing est accumsan lorem vestibulum.</p>
+                </div>
+                <div class="variations">
+                    <div class="color">Color:</div>
+                    <div class="choose_color">
+                        <div class="color_1"></div>
+                    </div>
+                    <div class="choose_color">
+                        <div class="color_2"></div>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <div class="number">
+                        <input type="button" value="-" class="math" inputmode="numeric" autocomplete="off">
+                        <input type="number" value="1" class="math">
+                        <input type="button" value="+" class="math">
+                    </div>
+                    <button class="cart" type="submit">
+                        <a class="a_cart" href="./cart.html">ADD TO CART</a>
+                    </button>
+                </div>
+                <div class="option">
+                    <div class="option_list"><i class="fa fa-shuffle" style="height: auto;margin-right: 3px;"></i>Compare</div>
+                    <div class="option_list"><i class="fa-regular fa-heart" style="height: auto;margin-right: 3px;"></i>Add to wishlist</div>
+                    <div class="option_list"><i class="fa-solid fa-ruler" style="height: auto;margin-right: 3px;"></i>Size Guide</div>
+                </div>
+                <div class="sku">
+                    <span style="display: flex;flex-direction: row;">
+                        <span class="color" style="padding-right: 3px;margin-bottom: 5px;">SKU:</span>
+                        <span class="phara" style="padding-left: 0;">N/A</span>
+                    </span>
+                    <span class="number">
+                        <span class="color" style="padding-right: 3px;margin-bottom: 5px;">Category:</span>
+                        <span class="phara" style="padding-left: 0;">Accessories</span>
+                    </span>
+                </div>
+                <div class="icon_detail">
+                    <span class="color" style="padding-right: 3px;margin-right: 5px;">Share:</span>
+                    <a href="#" class="icon_detail"><i class="fa-brands fa-facebook-f "></i></a>
+                    <a href="#" class="icon_detail"><i class="fa-brands fa-x-twitter "></i></a>
+                    <a href="#" class="icon_detail"><i class="fa-brands fa-pinterest "></i></a>
+                    <a href="#" class="icon_detail"><i class="fa-brands fa-instagram "></i></a>
+                    <a href="#" class="icon_detail"><i class="fa-brands fa-telegram "></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- end detail -->
+        <!-- start description -->
+        <section class="wrapper d-flex align-items-center justify-content-center" style="border-top: 0.5px solid #eaeaea;border-bottom: 0.5px solid #eaeaea;">
+            <div class="descript d-flex align-items-center justify-content-center">
+                <div class="select row">
+                    <div class="select_1 col-lg-1" style="border-top: 4px solid #729f2e;">
+                        <a class="select_2" href="#" style="color:#0A0A0A;">DESCRIPTION</a>
+                    </div>
+                    <div class="select_1 col-lg-1 d-none d-sm-none  d-md-block">
+                        <div class="green"></div>
+                        <a class="select_2" href="#">ADDITIONAL INFORMATION</a>
+                    </div>
+                    <div class="select_1 col-lg-1 d-none d-sm-none  d-md-block">
+                        <div class="green"></div>
+                        <a href="#" class="select_2">REVIEW (1)</a>
+                    </div>
+                    <div class="select_1 col-lg-1 d-none d-sm-none  d-md-block">
+                        <div class="green"></div>
+                        <a href="#" class="select_2">ABOUT BRAND</a>
+                    </div>
+                    <div class="select_1 col-lg-1 d-none d-sm-none  d-md-block style="margin-right: 0;">
+                        <div class="green"></div>
+                        <a href="#" class="select_2">SHIPPING &  DELIVERY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="visual row row-cols-1 row-cols-md-3 d-flex align-items-center justify-content-center">
+                <div class="visual_text col">
+                    <h4 style="font-family: 'Poppins';font-size: 22px;color:#242424;font-weight: 600;margin-bottom: 30px;">VESTIBULUM TEMPUS METUS</h4>
+                    <ul style="padding-left: 0; align-items: center;">
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Lorem ipsum dolor sit amet, conse.</li>
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Aliquam tincidunt mauris eu risus.</li>
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Vestibulum <b style="margin: 0 2px;color:#242424">auctor dapibus</b> neque.</li>
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Nunc dignissim risus id metus.</li>
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Cras ornare tristique elit.</li>
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Vivamus vestibulum nulla nec ante.</li>
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Praesent placerat risus quis eros.</li>
+                        <li class="visual_list"><i class=" visual_list fa-solid fa-greater-than" style="margin-right: 4px;margin-bottom: 0; font-size: 8px;"></i>Fusce pellentesque suscipit nibh.</li>
+                    </ul>
+                    <div class="visual_phara">
+                        <p>Commodo parturient tincidunt condim entum vestibulum dolor laoreet eros suspen disse magna torquent ac condi mentum arcu parturient nec disse magna torquent ac condi mentum arcu parturient nec.</p>
+                    </div>
+                </div>
+                <div class="visual_text col">
+                    <img src="./public/images/iphone-dock-1-2.jpg" alt="iphone">
+                </div>
+                <div class="visual_text col">
+                    <img src="./public/images/iphone-dock-2.jpg" alt="iphone">
+                </div>
+            </div>
+        </section>
+        <!-- end description -->
+        <!-- start frequently -->
+        <section class="freq">
+            <h4 class="freq_title">Frequently bought together</h4>
+            <div class="freq_item row">
+                <div class="freq_1 d-flex col-md-8 d-md-flex flex-sm-row flex-column">
+                    <div class="freq_1_item col-md-4">
+                        <div class="freq_image">
+                            <div class="shuffle_2">
+                                <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                                <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="shuffle">
+                                <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                            </div>
+                            <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/iphone1.jpg" alt="a">
+                        </div>
+                        <div class="freq_text">
+                            <div class="freq_des">
+                                <h3 class="freq_name">iPhone Dock</h3>
+                                <div class="freq_category">Accessories</div>
+                                <div class="freq_price">
+                                    <div class="freq_pri">$399.00</div>
+                                    <div class="freq_rating">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freq_1_item col-md-4 d-md-block d-none">
+                        <div class="freq_image">
+                            <div class="shuffle_2">
+                                <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                                <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="shuffle">
+                                <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                            </div>
+                            <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/product-furniture-14-2.jpg.webp" alt="a">
+                        </div>
+                        <div class="freq_text">
+                            <div class="freq_des">
+                                <h3 class="freq_name">Decoration for table</h3>
+                                <div class="freq_category">Accessories</div>
+                                <div class="freq_price">
+                                    <div class="freq_pri">$332.10</div>
+                                    <div class="freq_rating">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="freq_1_item col-md-4 d-md-block d-none">
+                        <div class="freq_image">
+                            <div class="shuffle_2">
+                                <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                                <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="shuffle">
+                                <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                            </div>
+                            <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/zebra-kay-bojesedn-1500x1500-3-430x490.jpg" alt="a">
+                        </div>
+                        <div class="freq_text">
+                            <div class="freq_des">
+                                <h3 class="freq_name">Lucie Kaas</h3>
+                                <div class="freq_category">Toys</div>
+                                <div class="freq_price">
+                                    <div class="freq_pri">$199.00</div>
+                                    <div class="freq_rating">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="freq_2 d-flex col-md-4 d-md-flex">
+                    <div class="form">
+                        <div><i style="margin-right: 5px; color: #0000002d;" class="fa-solid fa-square-check"></i>iPhone Dock <span class="freq_pri">$399.00</span></div>
+                        <select class="select_option">
+                            <option value="9426">Gray</option>
+                            <option value="9426">Black</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <div><i style="margin-right: 5px; color: rgb(78, 78, 255);" class="fa-solid fa-square-check"></i>iPhone Dock <span class="freq_pri">$323.10</span></div>
+                        <select class="select_option">
+                            <option value="9426">Brown</option>
+                            <option value="9426">Beige</option>
+                        </select>
+                    </div>
+                    <div class="form" style="height: fit-content;">
+                        <div><i style="margin-right: 5px; color: rgb(78, 78, 255);" class="fa-solid fa-square-check"></i>iPhone Dock <span class="freq_pri">$199.00</span></div>
+                    </div>
+                    <span class="freq_pri" style="font-size: 26px;">$921.00</span>
+                    <div style="font-family: 'Lato';color:#777777; font-size: 14px;">For 3 items</div>
+                    <button class="cart_button">ADD TO CART</button>
+                </form>
+            </div>
+        </section>
+        <!-- end frequently -->
+        <!-- start like -->
+        <section class="like">
+            <h4 class="freq_title">You may also like...</h4>
+            <div class="freq_item row">
+                <div class="freq_1_item col-md-3 col-6">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/product-furniture-14-430x491.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Decoration for table</h3>
+                            <div class="freq_category">Accessories</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$359.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="freq_1_item col-md-3 col-6">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/clock12.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Lectus volutpat</h3>
+                            <div class="freq_category">Clocks</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$159.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="freq_1_item col-md-3 d-md-block d-none">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/clocks8-860x983.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Leo consectetur metus</h3>
+                            <div class="freq_category">Clocks</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$99.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="freq_1_item col-md-3 d-md-block d-none">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/walnut-knife-grid-A8.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Pocket Knife</h3>
+                            <div class="freq_category">Accessories</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$399.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end like -->
+        <!-- start relate -->
+        <section class="like">
+            <h4 class="freq_title">Related products</h4>
+            <div class="freq_item row">
+                <div class="freq_1_item col-md-3 col-6">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/product-accessories-3.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Photo camera wooden model</h3>
+                            <div class="freq_category">Accessories</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$259.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="freq_1_item col-md-3 col-6">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/product-accessories-1.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Wooden bow tie man</h3>
+                            <div class="freq_category">Accessories</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$359.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="freq_1_item col-3 d-md-block d-none">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/product-furniture-11-3.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Wine bottle lantern</h3>
+                            <div class="freq_category">Accessories</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$399.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="freq_1_item col-3 d-md-block d-none">
+                    <div class="freq_image">
+                        <div class="shuffle_2" style="height: 35%;">
+                            <i class="fa-regular fa-heart" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 25px;"></i>
+                        </div>
+                        <div class="shuffle">
+                            <i class="fa-solid fa-shuffle" style="display: block;text-align: right;font-size: 25px; padding: 10px 10px;"></i>
+                        </div>
+                        <img class="freq_im" style="height: 100%;width: 100%;" src="./public/images/product-accessories-10.jpg" alt="a">
+                    </div>
+                    <div class="freq_text">
+                        <div class="freq_des">
+                            <h3 class="freq_name">Decoration wooden present</h3>
+                            <div class="freq_category">Accessories</div>
+                            <div class="freq_price">
+                                <div class="freq_pri">$89.00</div>
+                                <div class="freq_rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end relate -->
+    </div>
+    <div class="footer">
+        <div class="footer-container-main">
+            <div class="footer-side-bar row mx-auto">
+                <div class="footer-column-1 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all">
+                        <div class="footer-menu"><b>FOOTER MENU</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">Instagram profile</a>
+                            <a class="list-items" href="#">New Collection</a>
+                            <a class="list-items" href="#">Woman Dress</a>
+                            <a class="list-items" href="#">Contact Us</a>
+                            <a class="list-items" href="#">Lastest News</a>
+                            <a class="list-items" href="#">Purchase Theme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-2 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all2">
+                        <div class="footer-menu"><b>RECENT POSTS</b></div>
+                        <div class="footer-list">
+                            <div class="room">
+                                <img class="room-pic" src="./public/images/blog-12-75x65.jpg">
+                                <div class="text-room">
+                                    <div class="text-des"><b>A companion for extra<br>sleeping</b></div>
+                                    <div class="text-cmt">
+                                        <div class="text-date">July 23,2016</div>
+                                        <div class="text-date" style="padding-left: 3px;">1 Comment</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <img class="room-pic" src="./public/images/blog-11-75x65.jpg">
+                                <div class="text-room">
+                                    <div class="text-des"><b>Outdoor seating<br>collection inspiration</b></div>
+                                    <div class="text-cmt">
+                                        <div class="text-date">July 23,2016</div>
+                                        <div class="text-date" style="padding-left: 3px;">1 Comment</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-3 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all3">
+                        <div class="footer-menu"><b>OUR STORES</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">New York</a>
+                            <a class="list-items" href="#">London SF</a>
+                            <a class="list-items" href="#">Edinburgh</a>
+                            <a class="list-items" href="#">Los Angeles</a>
+                            <a class="list-items" href="#">Chicago</a>
+                            <a class="list-items" href="#">Las Vegas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column-4 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-all4">
+                        <div class="footer-menu"><b>USEFUL LINKS</b></div>
+                        <div class="footer-list">
+                            <a class="list-items" href="#">Privacy Policy</a>
+                            <a class="list-items" href="#">Returns</a>
+                            <a class="list-items" href="#">Terms&Condition</a>
+                            <a class="list-items" href="#">Contact Us</a>
+                            <a class="list-items" href="#">Lastest News</a>
+                            <a class="list-items" href="#">Our Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-md-block d-none">
+        <div class="footer-end">
+            <div class="footer_end row">
+                <div class="min-footer col-md-9 d-md-block d-none">
+                    <div class="min-footer-text"><b>WOODMART</b> © 2023 CREATED BY <b><span
+                                style="color: red;">X</span>TEMOS STUDIO</b>. PREMIUM E-COMMERCE SOLUTIONS.
+                    </div>
+                </div>
+                <div class="min-footer-logo col-md-3 d-md-block d-none">
+                    <img class="footer-end-logo" src="./public/images/payments.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
